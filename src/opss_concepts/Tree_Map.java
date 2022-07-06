@@ -1,5 +1,6 @@
 package opss_concepts;
 
+import java.util.Iterator;
 import java.util.TreeMap;
 
 public class Tree_Map {
@@ -28,10 +29,19 @@ public class Tree_Map {
 		System.out.println(tree.firstKey());
 		System.out.println(tree.lastKey());
 		
-		System.out.println(tree.pollFirstEntry()); // show and delete it also
-		System.out.println(tree.pollLastEntry());
+//		System.out.println(tree.pollFirstEntry()); // show and delete it also
+//		System.out.println(tree.pollLastEntry());
 		
 		System.out.println(tree);
+		
+//		Iteratin on Tree map
+		
+		Iterator itr = tree.entrySet().iterator();
+		
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
 	}
 
 }
