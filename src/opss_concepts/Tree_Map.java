@@ -1,6 +1,7 @@
 package opss_concepts;
 
 import java.util.Iterator;
+import java.util.Map.Entry;
 import java.util.TreeMap;
 
 public class Tree_Map {
@@ -34,7 +35,13 @@ public class Tree_Map {
 		
 		System.out.println(tree);
 		
-//		Iteratin on Tree map
+//		Iterating on Tree map using for loop
+		
+//		for(Entry<Character,Integer> e : tree.entrySet()) {
+//			System.out.println(e);
+//		}
+		
+//		Iterating on Tree map using iterator
 		
 		Iterator itr = tree.entrySet().iterator();
 		
