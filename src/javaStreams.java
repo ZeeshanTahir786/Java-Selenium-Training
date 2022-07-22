@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class javaStreams {
@@ -53,8 +54,34 @@ public class javaStreams {
 
 //		Print names which have first letter as "A" with uppercase and sorted
 
-		List<String> name = Arrays.asList("Hafiz", "Ahsan", "Ali", "Anjum", "Tanzeel");
+		List<String> name = Arrays.asList("Hafiz Z", "Tabish", "Fasseh", "Jamil", "Aslmaa");
 		name.stream().filter(a -> a.startsWith("A")).sorted().map(s -> s.toUpperCase())
-				.forEach(a -> System.out.println("Hyy "+a));
+				.forEach(a -> System.out.println("Hyy " + a));
+
+//		Merging two diffrent ArrayList
+		Stream<String> newStream = Stream.concat(names.stream(), name.stream());
+
+//		newStream.sorted().forEach(s -> System.out.println("New Stream "+s));
+
+//		Find specific element in arraylist
+
+		boolean flag = newStream.anyMatch(a -> a.equalsIgnoreCase("Ali"));
+		System.out.println(flag);
+
+//		Convert ArrayList into Stream and after manipulation convert that stream into ArrayList
+		List<String> ls = Stream.of("Hafiz", "Ahsan", "Ali", "Anjum", "Tanzeel").filter(a -> a.startsWith("A"))
+				.collect(Collectors.toList());
+		System.out.println(ls.get(0));
+		
+		List<Integer> values = Arrays.asList(3,4,5,6,3,2,3,2,3);
+//		Print unique numbers from this  array
+//		sort the array
+//		values.stream().distinct().sorted().forEach(s -> System.out.println(s));
+		
+//		Print 3rd index from that unique sorted array
+		List<Integer> val = values.stream().distinct().sorted().collect(Collectors.toList());
+		System.out.println(val.get(2));
+
+
 	}
 }
