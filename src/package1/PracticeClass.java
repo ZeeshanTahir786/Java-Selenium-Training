@@ -7,7 +7,7 @@ public class PracticeClass {
 		System.out.println("Hello World");
 //		byte b1 = 123;
 //		short sh1 = 7654; 
-////		int num1 = 456789; 
+////	int num1 = 456789; 
 //		long l1 = 3456789; 
 //		float f1= 12.5678f;
 //		double d1= 234.456789;
@@ -16,19 +16,19 @@ public class PracticeClass {
 //		
 //        System.out.println(b1);
         
-//        int num1 = 100;
-//        int num2 = 200;
-//        int num3 = 300;
+//       int num1 = 100;
+//       int num2 = 200;
+//       int num3 = 300;
 //        
-//        if(num1 > num2) {
+//       if(num1 > num2) {
 //        	System.out.println("Num1 ins greater"+num1);
-//        } else  if(num2 > num3) {
+//       } else  if(num2 > num3) {
 //        	System.out.println("Num2 ins greater"+num2);
-//        } else  if(num3 > num1) {
+//       } else  if(num3 > num1) {
 //        	System.out.println("Num3 ins greater"+num3);
-//        } else  if(num2 > num1) {
+//       } else  if(num2 > num1) {
 //        	System.out.println("Num2 ins greater"+num2);
-//        }
+//       }
         
         
 //         Write a program to find first 20 numbers of Fibonacci Series 
@@ -63,7 +63,7 @@ public class PracticeClass {
 //        System.out.println(str1.matches(pattern));
 //        System.out.println(str2.endsWith("Java"));
 //        ----------------------------------------------------
-//        write a program to reverse a sring
+//        write a program to reverse a string
 //        String str1 = "Hello";
 //        String temp= "";
 //        for (int i = 0; i < str1.length(); i++) {
